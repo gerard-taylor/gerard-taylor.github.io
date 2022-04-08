@@ -7,11 +7,12 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { Routes, Route, Link } from "react-router-dom";
 
 class App extends Component {
 
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       foo: "bar",
       resumeData: {},
@@ -69,6 +70,7 @@ class App extends Component {
     return (
       <div>
         <Header sharedData={this.state.sharedData.basic_info} />
+        <Link to="/Donut">Donut</Link>
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}

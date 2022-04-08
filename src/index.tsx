@@ -1,16 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import './index.scss';
 import App from './App';
+import Routes from './router/index';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* GLOBAL VARIABLES */
-
+//@ts-ignore
 window.$primaryLanguage = 'en';
+//@ts-ignore
 window.$secondaryLanguage = 'pl';
+//@ts-ignore
 window.$primaryLanguageIconId = 'primary-lang-icon';
+//@ts-ignore
 window.$secondaryLanguageIconId = 'secondary-lang-icon';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes/>
+  </BrowserRouter>, 
+  document.getElementById('root')
+);
 serviceWorker.register();
