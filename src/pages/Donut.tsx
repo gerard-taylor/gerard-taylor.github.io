@@ -5,7 +5,7 @@ import Project from 'components/Project';
 function DonutPage () {
 
   return (
-    <Project image="donut.png">
+    <Project name="Donut">
     </Project>
   );
 }
