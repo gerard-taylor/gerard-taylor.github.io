@@ -19,7 +19,7 @@ class Footer extends Component {
       cache: false,
       success: function (data) {
         this.setState({ sharedBasicInfo: data.basic_info });
-        document.title = `${this.state.sharedBasicInfo.basic_info.name}`;
+        document.title = `${this.state.sharedBasicInfo.name}`;
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -43,8 +43,7 @@ class Footer extends Component {
         );
       });
     }
-
-    console.log("name", this.state?.sharedBasicInfo?.name)
+    
     return (
       <footer>
         <div className="col-md-12">
