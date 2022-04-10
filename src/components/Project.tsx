@@ -6,7 +6,7 @@ import { Grid, Typography, Chip, Container } from '@mui/material';
 //import AwesomeSliderStyles from "scss/light-slider.scss";
 //import AwesomeSliderStyles2 from "scss/dark-slider.scss";
 
-const filePath = "res_primaryLanguage.json";
+const filePath = window.location.href + "/res_primaryLanguage.json";
 function Project (props:React.PropsWithChildren<{name:string}>) {
   const projectData = useProjectData(filePath, props.name);
 
