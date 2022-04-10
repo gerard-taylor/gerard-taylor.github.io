@@ -14,6 +14,7 @@
         "title": "Donut",
         "startDate": "2021",
         "description": "3D render of a donut.",
+        "overview": "The blender 2.8 beginner course, created by Blender Guru, was completed in 2021. This course covered modeling, sculpting, materials, textures, and key frame animation.",
         "images": [
           "images/portfolio/donut/Donut.png",
           "images/portfolio/donut/coop.png"

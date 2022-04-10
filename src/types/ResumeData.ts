@@ -12,7 +12,8 @@ export default interface ResumeData {
   projects?: {
     title: string,
     startDate: string,
-    description: string
+    description: string,
+    overview: string,
     images: string[],
     url: string,
     technologies: {
